@@ -7,7 +7,7 @@ public class BackJun {
 		Scanner scan = new Scanner(System.in);
 		
 		int arr[] = new int[42];
-		int num[] = new int[9];
+		int num[] = new int[10];
 		
 		//num[0] = (int) scan.nextInt();
 		int Remainder; //나머지
