@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int num = scan.nextInt();
+
+		int arr[] = new int[num];		
+		
+		
+		for(int i = 0 ; i<num ; i++) {
+			String OX = scan.next();	
+			
+			int cnt = 0;
+			
+			for(int x = 0 ; x<OX.length() ; x++) {
+				OX.charAt(x);				
+			}
+			
+			int sum =0;
+			for(int y =0 ; y<OX.length() ; y++) {
+				if(OX.charAt(y) =='O') {
+					cnt++;
+					sum = sum+cnt;
+				}else {
+					cnt = 0;
+				}
+			}//end for
+			
+			arr[i] = sum;
+			
+		}//end for
+		
+		for(int a = 0 ; a<arr.length ; a++) {
+			System.out.println(arr[a]);
+		}
+
+	}
+}
